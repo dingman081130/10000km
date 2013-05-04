@@ -1,0 +1,842 @@
+/* 
+    Document   : style
+    Created on : 2012-11-21, 15:19:06
+    Author     : yemin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body > .container > #content {
+    padding-top: 60px;
+    min-height: 500px;
+}
+
+ul.inline > li {
+    *display:inline;
+}
+
+.index-body {
+    background-image: url('/img/index_bg.jpg');
+}
+
+.index-search-form {
+    padding: 16px 18px;
+    border-radius: 9px;
+    box-shadow: 0 0 40px black inset;
+}
+.index-search-form input.keyword {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float: left;
+    font-size: 20px;
+    height: 32px;
+}
+.index-search-form input.submit-btn {
+    cursor: pointer;
+    float: left;
+    height: 40px;
+    padding: 0 10px 2px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    background:url('/img/search-right.png') -92px 50% no-repeat;
+    border:none;
+    max-height: 43px;
+    width:68px;
+    text-indent: -9999px;
+}
+
+.index-footer {
+    position: absolute;
+    bottom: 10px;
+}
+.index-footer span, .index-footer a{
+    color: #333;
+}
+.main-footer {
+    margin: 30px 0 10px 0;
+}
+.main-footer .logo img{
+    height: 30px;
+}
+.main-footer .about-help {
+    margin-left: 10px;
+}
+.main-footer .about-help li {
+    display: block;
+    float: left;
+    margin-left: 6px;
+}
+.main-footer .about-help li:not(:last-child) {
+    border-right: 1px solid #CCC;
+    padding-right: 6px;
+}
+
+
+.qtip {
+    font-size: 14px;
+}
+
+.star-full {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/img/star-100-icon.png");
+}
+
+.star-half {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/img/star-50-icon.png");
+}
+
+.star-empty {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/img/star-0-icon.png");
+}
+
+
+
+
+
+
+/******* 登录页面 *****/
+.login-dlg {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    /*box-shadow: 0 0 10px 0 #DDD;
+    border: 1px solid #CCC;*/
+    background-color: white;
+}
+
+.login-dlg .login-dlg-header {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #F4F4F4;
+}
+
+.login-dlg .login-dlg-social {
+    text-align: center;
+}
+
+.login-dlg .login-dlg-social > div {
+    width: 248px;
+    margin: 0 auto;
+}
+
+.login-dlg .login-dlg-social a {
+    display: block;
+    float: left;
+    width: 114px;
+    height: 36px;
+    margin: 0 4px 5px 4px;
+    background: url("/img/btn_sprite.png") left top no-repeat;
+}
+
+.login-dlg .login-dlg-social .weibo {
+    background-position: -456px 0;
+}
+
+.login-dlg .login-dlg-social .qq {
+    background-position: -342px -40px;
+}
+
+.login-dlg .login-dlg-social .douban {
+    background-position: -228px 0;
+}
+
+.login-dlg .login-dlg-social .renren {
+
+}
+
+.user-page-head .want-place-list li, .user-page-head .personality-tags-list li{
+    padding: 2px 10px;
+    float: left;
+    margin: 0 5px 5px 0;
+    background-color: #CDE69C;
+    border: 1px solid #A5D24A;
+    color: #638421;
+    border-radius: 2px;
+}
+
+
+
+/************  user comment box ****************/
+.user-comment-box .user-comment-filter{
+    width: 600px;
+    float: left;
+}
+
+.user-comment-box .user-comment-filter label {
+    width: 60px;
+}
+
+
+.trip-level ul li {
+    display: block;
+}
+.trip-level ul li label {
+    float: left;
+    width: 60px;
+}
+.trip-level .trip-level-stars {
+    float: left;
+}
+
+.trip-search-form .trip-category{
+    display: inline-block;
+}
+.trip-search-form .trip-category li{
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.trip-list .trip-item .trip-content {
+    border-bottom: 1px dashed #EEE;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.trip-list .trip-item .trip-detail {
+    margin-left: 130px;
+}
+
+.trip-list > li{
+    border-bottom: 1px solid #CCC;
+    margin-top: 10px;
+}
+
+
+.trip-head {
+    position: relative;
+    height: 26px;
+}
+
+.trip-detail dl{
+    margin-left: -90px;
+}
+
+.trip-detail .trip-action button{
+    margin-right: 12px;
+}
+
+
+.trip-comment .post-box {
+    position: relative;
+    padding-left: 40px;
+}
+
+.trip-comment .post-box .avatar {
+    position: absolute;
+    left: 0;
+}
+
+.trip-comment .post-box .avatar img {
+    width: 36px;
+    height: 36px;
+}
+
+.trip-comment .post-box .content-area {
+    border: 1px solid rgba(75, 83, 94, 0.45098);
+    border-radius: 5px;
+}
+
+.trip-comment .post-box .content-area form {
+    margin: 0;
+}
+
+.trip-comment .post-box .content-area textarea {
+    border: none;
+    box-shadow: none;
+    width: 96%;
+    resize: vertical
+}
+
+.trip-comment .post-box .content-area .action-bar {
+    border-top: 1px dashed #C6CDD6;
+    padding: 5px;
+}
+
+.trip-comment .post-box .content-area .action-bar .emotion-btn {
+    float: left;
+    display: block;
+    cursor: pointer;
+}
+
+.trip-comment .post-box .content-area .action-bar .emotion-btn > span{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url('/img/emotion-icon.png') no-repeat;
+}
+
+.trip-comment .reply-box {
+    background-color: white;
+    border: 1px solid rgba(75, 83, 94, 0.45098);
+    border-radius: 5px;
+    display: none;
+}
+
+.trip-comment .reply-box form{
+    margin: 0;
+}
+
+.trip-comment .reply-box form textarea {
+    border: none;
+    box-shadow: none;
+    width: 96%;
+    resize: vertical;
+}
+
+.trip-comment .reply-box .action-bar {
+    border-top: 1px dashed #C6CDD6;
+    padding: 5px;
+    position: relative;
+}
+
+.trip-comment .reply-box .action-bar .emotion-btn {
+    float: left;
+    display: block;
+    cursor: pointer;
+}
+
+.trip-comment .reply-box .action-bar .emotion-btn span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("/img/emotion-icon.png") no-repeat;
+}
+
+.trip-comment .comment-list {
+    margin-top: 10px;
+}
+
+.trip-comment .comment-list .comment-item {
+    padding-left: 32px;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.0980392);
+}
+
+.trip-comment .comment-list > .comment-item {
+    padding-left: 48px;
+}
+.trip-comment .comment-list > .comment-item.collapsed {
+    padding-left: 32px;
+}
+
+.trip-comment .comment-list .comment-item .comment-data {
+    padding: 15px 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.0980392);
+    padding-right: 8px;
+}
+
+.trip-comment .comment-list .comment-item .comment-data .avatar {
+    position: absolute;
+    top: 15px; left: 0;
+}
+
+.trip-comment .comment-list .comment-item .comment-data .avatar > img {
+    width: 24px;
+    height: 24px;
+}
+
+.trip-comment .comment-list > .comment-item > .comment-data .avatar > img {
+    width: 36px;
+    height: 36px;
+}
+
+.trip-comment .comment-list > .comment-item.collapsed > .comment-data .avatar > img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.trip-comment .comment-list .comment-item .comment-header .toolbar {
+    display: none;
+}
+
+.trip-comment .comment-list .comment-item .comment-header .toolbar > li {
+    display: inline-block;
+}
+
+
+
+
+
+.trip-create-form .trip-way-list li{
+    display: block; 
+    float: left;
+}
+
+.trip-create-form .trip-way-list li label {
+    width: 80px;
+}
+
+.trip-create-form .submit-btn {
+    display: block;
+    width: 180px;
+    margin: 15px auto;
+}
+
+.trip-cover-upload {
+    text-align: center;
+    width: 220px;
+    position: absolute;
+    right: 0;
+}
+
+.trip-cover-upload .upload-btn {
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
+/************************** 新鲜事列表 ****************************/
+.fresh-list{
+    display: block;
+    margin-left : 10px;
+    margin-top : 10px;
+}
+.fresh-list > .fresh-item{
+    margin-top: 10px;
+    padding: 0 0 10px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0980392);
+}
+.fresh-item > .fresh-data{
+    margin-left: 70px;
+}
+.fresh-item > .fresh-avatar{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.fresh-avatar img{
+    width: 50px;
+    height: 50px;
+}
+.fresh-data > .fresh-body {
+    margin-top: 5px;
+}
+.fresh-data > .fresh-footer{
+    margin-top: 10px;
+}
+.fresh-data > .fresh-header{
+    margin-bottom : 0px;
+}
+.fresh-data > .fresh-header .fresh-action {
+    color: #888;
+}
+
+
+/************************** 图片列表 ****************************/
+.photo-list{
+}
+.photo-list > .photo-item{
+    with: 80px;
+    min-width: 80px;
+    max-width: 80px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    line-height: 60px;
+    float: left;
+    
+    margin-top: 2px;
+    margin-right: 2px;
+    overflow: hidden;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+.photo-list > .photo-item > img{
+    with:70px;
+    max-width: 70px;
+    max-height: 50px;
+}
+/************************** 图片story ****************************/
+.photo-story{
+    margin-top: 10px;
+}
+.photo-article{
+    display: inline;
+}
+.photo-comment-list{
+    float: next;
+}
+.photo-comment-reply-data{
+    margin-left:40px;
+}
+.photo-comment-item{
+    border-top: 1px dashed rgba(0, 0, 0, 0.0980392);
+    margin: 18px 0;
+    padding-top: 9px;
+    display: block;
+}
+.photo-comment-item-avatar{
+    float:left;
+    width: 50px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.photo-comment-item-header{
+    margin-left: 60px;
+    font-size: 10px;
+    color: #F60;
+}
+.photo-comment-item-data > .content > a{
+    font-size: 12px;
+    color: #F60;
+}
+.photo-comment-item-data{
+    margin-left: 60px;
+    padding-top: 3px;
+    text-align: left;
+}
+.photo-comment-item-footer > .time{
+    float:left;
+    font-size: 12px;
+    color: gray;
+}
+.photo-comment-item-footer > .btns{
+    float:right;
+    font-size: 12px;
+}
+.photo-comment-item-footer > .btns > .reply{
+    float:left;
+}
+.photo-comment-reply-avatar{
+    float:left;
+    width: 50px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.photo-comment-replay-data{
+    margin-left: 60px;
+}
+.photo-comment-reply-text{
+    margin-top: 5px;
+    resize: vertical;
+    width: 95%;
+}
+.photo-comment-reply-emotion{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url('/img/emotion-icon.png') no-repeat;
+}
+/************************** card ****************************/
+.card-item{
+    margin: 0px 15px 10px 0; 
+    float: left;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+}
+.card-item > a{
+    float: left;
+    overflow: hidden;
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    vertical-align: middle;
+    text-align: center;
+}
+.card-item > div{
+    overflow: hidden;
+    width: 180px;
+    height: 50px;
+}
+.card-item > a > img{
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 135px;
+    max-width: 190px;
+}
+.card-item > .muted{
+    width: 200px;
+    height: 50px;
+}
+.card-story{
+    margin-top: 10px;
+    text-align: center;
+}
+/************************** 照片预览 ****************************/
+.album-previewer{
+    padding-bottom: 3px;
+    border-bottom: 1px solid #CCC;
+    height: 200px;
+    overflow-y:auto;
+    display: none
+}
+.photo-clip{
+    width: 60px;
+    height: 60px;
+    float: left;
+    
+    margin-top: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+
+.photo-clip > div {
+    border: 2px solid white;
+    overflow: hidden;
+    height: 56px;
+    width: 56px;
+}
+
+.photo-clip > div.sel {
+    border: 2px solid #D95252;
+}
+
+.photo-clip img{
+    max-width: none;
+    max-height: none;
+}
+/************************** 相册列表 ****************************/
+.album-list{
+}
+.album-item{
+    text-align: center;
+    position: relative;
+    display: block;
+    text-align: center;
+    
+    margin: 0 10px 10px 0;
+    with: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    float: left;
+}
+.album-item > div{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    
+    with: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    line-height: 150px;
+    float: none;
+}
+.album-item > div > div{
+    with: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+}
+.album-item > div > div > a > img{
+    /*width: 138px;*/
+    max-width: 138px;
+    max-height: 138px;
+}
+.album-item > span{
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    opacity: 0.8;
+}
+.album-item > .name{
+    width:150px;
+    max-width: 150px;
+    max-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.photo-set-btns{
+    margin-top: 10px;
+    font-size:14px;
+}
+.photo-set > li{
+}
+.photo-story > small > textarea{
+    resize: none;
+    border: 0px;
+    height: 20px;
+    max-height: 50px;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    cursor: default;
+    font-size:12px;
+}
+.photo-story .photo-area {
+    position: relative;
+    text-align: center;
+}
+.photo-story .photo-area .nav-btn {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background: white;
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+.photo-story .photo-area .nav-btn.prev {
+    left: 0;
+    cursor: url("/img/arrow_left.cur"), auto;
+}
+.photo-story .photo-area .nav-btn.next {
+    right: 0;
+    cursor: url("/img/arrow_right.cur"), auto;
+}
+.album-header{
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 10px; 
+    position: relative;
+}
+.album-cover{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.album-cover > div{
+    with: 30px;
+    min-width: 30px;
+    max-width: 30px;
+    height: 30px;
+    max-height: 30px;
+    min-height: 30px;
+    line-height: 30px;
+    float: left;
+    /*border:1px #ffffff solid;*/
+    overflow: hidden;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+.album-cover > div > img{
+    with:20px;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.trip-list1{
+    margin-left: -20px;
+}
+.trip-item1{
+    border-bottom: 1px dashed #EEE;
+    padding-bottom: 5px;
+
+}
+.trip-data1{
+    margin-left: 140px;
+}
+.bread-crumb{
+    font-size: 14px;
+    line-height: 30px;
+    float: left;
+    margin-left: 10px;
+}
+.map{
+    width: 300px;
+    height: 376px;
+}
+.map > .china{
+    with: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 376px;
+    max-height: 376px;
+    min-height: 376x;
+    line-height: 376px;
+    
+    margin-top: 2px;
+    margin-right: 2px;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.map > .china > img{
+    /*with:280px;
+    max-width: 50px;
+    max-height: 35px;*/
+    
+}
+
+
+
+
+/****************** 沙发管理 **********************/
+.couch-surf-log .header span.host, .couch-surf-log .couch-surf-item span.host {
+    display: inline-block; width: 120px;
+}
+.couch-surf-log .header span.title, .couch-surf-log .couch-surf-item span.title {
+    display: inline-block; width: 280px;
+}
+.couch-surf-log .header span.arrive-date, .couch-surf-log .couch-surf-item span.arrive-date {
+    display: inline-block; width: 90px;
+}
+.couch-surf-log .header span.leave-date, .couch-surf-log .couch-surf-item span.leave-date {
+    display: inline-block; width: 90px;
+}
+.couch-surf-log .header span.couch-number, .couch-surf-log .couch-surf-item span.couch-number {
+    display: inline-block; width: 40px;
+}
+.couch-surf-log .header span.status, .couch-surf-log .couch-surf-item span.status {
+    display: inline-block; width: 140px;
+}
+
+.couch-surf-log .couch-surf-item .detail {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 10px 10px 5px 10px;
+}
+
+.couch-surf-log .couch-surf-item .action-box {
+    border-top: 1px solid #EEE;
+    padding-top: 4px;
+}
+
+.reply-emotion{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url('/img/emotion-icon.png') no-repeat;
+    cursor: pointer;
+}
